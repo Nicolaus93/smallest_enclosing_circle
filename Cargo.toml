@@ -1,0 +1,13 @@
+[package]
+name = "smallest_enclosing_circle"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pyo3 = { version = "0.25.1", features = ["extension-module"] }
+numpy = "0.25.0"
+rand = "0.9.1"
+
+[lib]
+name = "smallest_enclosing_circle"
+crate-type = ["cdylib", "rlib"]
