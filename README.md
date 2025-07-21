@@ -75,11 +75,14 @@ print("Center:", center)
 print("Radius:", radius)
 ```
 
+---
+
 ### 📚 References
 
 - [Welzl's Algorithm](https://en.wikipedia.org/wiki/Smallest-circle_problem)
 - [Shewchuk Robust Geometric Predicates](https://people.eecs.berkeley.edu/~jrs/papers/robust-predicates.pdf)
 
+---
 
 ### 🙌 Acknowledgments
 
