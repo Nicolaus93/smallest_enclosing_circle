@@ -75,13 +75,13 @@ print("Center:", center)
 print("Radius:", radius)
 ```
 
-📚 References
+### 📚 References
 
 - [Welzl's Algorithm](https://en.wikipedia.org/wiki/Smallest-circle_problem)
 - [Shewchuk Robust Geometric Predicates](https://people.eecs.berkeley.edu/~jrs/papers/robust-predicates.pdf)
 
 
-🙌 Acknowledgments
+### 🙌 Acknowledgments
 
 This project was inspired by https://www.nayuki.io/page/smallest-enclosing-circle, which is great but unfortunately still
 missing a Rust implementation. The primary source for the implementation of the iterative version of Welzl's algorithm came 
