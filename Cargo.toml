@@ -1,7 +1,7 @@
 [package]
 name = "smallest_enclosing_circle"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 
 [dependencies]
 pyo3 = { version = "0.25.1", features = ["extension-module"] }
@@ -11,3 +11,18 @@ rand = "0.9.1"
 [lib]
 name = "smallest_enclosing_circle"
 crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "benchmark"
+path = "src/bin/benchmarks.rs"
+
+[profile.profiling]
+inherits = "release"
+debug = true
+# Prevent aggressive inlining that hides function calls
+opt-level = 2
+lto = "thin"
+
+# Force frame pointers for better stack traces
+[profile.profiling.package."*"]
+debug = true
