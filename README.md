@@ -9,7 +9,6 @@ A fast and robust implementation of Welzl’s algorithm for computing the **smal
 - Compute the minimal circle that encloses a given set of 2D points.
 - Uses a randomized version of **Welzl's algorithm**.
 - Includes robust geometric predicates (`incircle`, `orient2d`) for numerical stability.
-- Simple and efficient `Point` and `Circle` data types.
 - Optional **Python bindings** using `PyO3` and `numpy`.
 
 ---
@@ -65,10 +64,10 @@ import numpy as np
 from smallest_enclosing_circle import min_enclosing_circle
 
 points = np.array([
-[1.0, 0.0],
-[0.0, 1.0],
-[-1.0, 0.0],
-[0.0, -1.0],
+    [1.0, 0.0],
+    [0.0, 1.0],
+    [-1.0, 0.0],
+    [0.0, -1.0],
 ])
 
 center, radius = min_enclosing_circle(points)
